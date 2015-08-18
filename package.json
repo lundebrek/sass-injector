@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-insert": "*",
+    "gulp-livereload": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-webserver": "*"
+  }
+}

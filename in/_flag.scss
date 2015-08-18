@@ -1,0 +1,54 @@
+$ribbon_color: #a00;
+body {
+  &:before {
+    -webkit-animation:
+      down .25s .25s forwards,
+      up .75s 2.5s forwards
+    ;
+    background: $ribbon_color;
+    border-radius: 0 0 5px 5px;
+    box-shadow:
+      0 -2px 1px #900 inset,
+      0 1px 1px rgba(0,0,0,.2)
+    ;
+    color: #eee;
+    content: 'injected';
+    font-family: Avenir !important;
+    font-size: 12px;
+    font-weight: 700 !important;
+    left: 40px;
+    letter-spacing: 4px;
+    line-height: normal;
+    opacity: 0;
+    padding: 5px 10px;
+    position: fixed;
+    text-indent: 4px;
+    text-shadow: 0 1px #633;
+    text-transform: uppercase;
+    top: 0;
+    -webkit-transform: translatey(-100%);
+    z-index: 10000;
+  }
+}
+@-webkit-keyframes down {
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}
+@-webkit-keyframes up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translatey(-110%);
+  }
+}
