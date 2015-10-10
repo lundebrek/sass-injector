@@ -3,7 +3,8 @@
 Compile Sass and inject it into a website.
 
 - super fast
-- styles update when Sass changes
+- compiles CSS on SCSS file save
+- styles update when CSS changes
 - no page refresh
 
 Doesn't work on sites that protect against XSS.
@@ -27,17 +28,6 @@ Doesn't work on sites that protect against XSS.
 
 Your styles will appear on the webpage, and update with each save.
 
+Watch the console for Sass errors.
+
 To toggle style injection off, click the bookmarklet again.
-
-## Roadmap
-
-- Create index page for webserver to show bookmarklet code as a link
-- Separate "Injected" flag CSS from styles.css
-- Alert user when server isn't running
-  - if user clicks bookmarklet
-  - if server stops after clicking bookmarklet
-- Add configs to
-	- import external partials
-	- include Compass
-	- apply Autoprefixer
-- Alert user when the installed bookmarklet is out of date
