@@ -4,8 +4,11 @@
     "coffee-script": "*",
     "gulp": "*",
     "gulp-coffee": "*",
+    "gulp-filter": "*",
     "gulp-insert": "*",
+    "gulp-jade": "*",
     "gulp-livereload": "*",
+    "gulp-open": "*",
     "gulp-sass": "*",
     "gulp-uglify": "*",
     "gulp-webserver": "*"

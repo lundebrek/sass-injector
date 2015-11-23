@@ -2,22 +2,13 @@
 
 Compile Sass and inject it into a website.
 
-- super fast
-- compiles CSS on SCSS file save
-- styles update when CSS changes
-- no page refresh
-
-Doesn't work on sites that protect against XSS.
-
-## Dependencies
-
-1. Node. To install with Homebrew: `brew install node`
-
 ## Setup
 
-1. Install NPM package dependencies: `npm install`
-2. Run Gulp: `gulp`
-3. Install a **bookmarklet** based on [bookmarklet.js](http://localhost:8000/bookmarklet.js)
+1. Install [Node](https://nodejs.org/)
+1. Install [Gulp](http://gulpjs.com)
+2. Install NPM package dependencies: `npm install`
+3. Run Gulp: `gulp`
+4. [Install the bookmarklet](http://localhost:8001/)
 
 ## Use
 
@@ -31,3 +22,15 @@ Your styles will appear on the webpage, and update with each save.
 Watch the console for Sass errors.
 
 To toggle style injection off, click the bookmarklet again.
+
+_Won't work on sites protected from XSS._
+
+## Contribute
+
+Run `gulp build` to update the app files, including the bookmarklet file.
+
+## Why?
+
+I first created this tool when a client asked to have their CSS updated but couldn't give me access to their codebase (…yeah).
+
+It also came in handy for a project with a slow front end build system.

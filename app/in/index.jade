@@ -1,0 +1,35 @@
+- projectUrl = 'https://github.com/lundebrek/sass-injector'
+doctype html
+html(lang="en")
+  head
+    title Sass Injector - Bookmarklet
+    link(href="index.css", rel="stylesheet")
+    meta(name="viewport" content="width=device-width")
+    meta(charset="utf-8")
+  body
+    section
+      .intro
+        h1 Sass Injector Bookmarklet
+        p Drag this to your favorites bar:
+        .bookmarklet
+          a(alt="💉")
+            include ../out/bookmarklet.js
+        p Or, make a bookmark outta this:
+        code
+          include ../out/bookmarklet.js
+      .social
+        p: a(href=projectUrl) GitHub
+        p: a(href="http://twitter.com/lundebrek") Author
+    script.
+      (function() {
+        // Set bookmarklet href and text
+        var a = document.querySelector('.bookmarklet a')
+        a.href = a.innerHTML
+        a.innerHTML = a.getAttribute('alt')
+        // Livereload
+        var s = document.createElement('script')
+        s.src = 'http://127.0.0.1:35729/livereload.js'
+        s.id = 'sass_inject_lr'
+        document.body.appendChild(s)
+      }).call(this)
+

@@ -16,12 +16,12 @@ removeIf ['sass_inject_lr', 'sass_inject_css']
 
 if inject
   s = doc.createElement 'script'
-  s.setAttribute 'src', 'http://127.0.0.1:35729/livereload.js'
+  s.setAttribute 'src', 'http://localhost:35729/livereload.js'
   s.setAttribute 'id', 'sass_inject_lr'
   body.appendChild s
 
   l = doc.createElement 'link'
   l.setAttribute 'rel', 'stylesheet'
-  l.setAttribute 'href', 'http://127.0.0.1:8000/styles.css'
+  l.setAttribute 'href', 'http://localhost:8000/styles.css'
   l.setAttribute 'id', 'sass_inject_css'
   body.appendChild l
