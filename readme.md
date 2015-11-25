@@ -17,7 +17,7 @@ Compile Sass and inject it into a website.
 3. Click the bookmarklet
 4. Write styles in `in/styles.scss` and save
 
-Your styles will appear on the webpage, and update with each save.
+Your styles will appear on the webpage, and [livereload](https://www.npmjs.com/package/gulp-livereload) with each save. Your compiled CSS is saved into `out/`. 
 
 Watch the console for Sass errors.
 
@@ -27,7 +27,7 @@ _Won't work on sites protected from XSS._
 
 ## Contribute
 
-Run `gulp build` to update the app files, including the bookmarklet file.
+Sources for the bookmarklet and installation page are in `app/`. Run `gulp build` to compile Jade, Sass, and CoffeeScript from `app/in/` to `app/out/`.
 
 ## Why?
 
