@@ -72,6 +72,18 @@ void 0;
         s.src = 'http://127.0.0.1:35729/livereload.js'
         s.id = 'sass_inject_lr'
         document.body.appendChild(s)
+        // On click, select text in code element
+        document.querySelector('code').onclick = function() {
+          if (document.selection) {
+              var range = document.body.createTextRange();
+              range.moveToElementText(this);
+              range.select();
+          } else if (window.getSelection) {
+              var range = document.createRange();
+              range.selectNode(this);
+              window.getSelection().addRange(range);
+          }
+        }
       }).call(this)
     </script>
   </body>
