@@ -13,6 +13,12 @@ body {
   margin: 0;
   position: absolute;
   width: 100%;
+  *::-moz-selection {
+    background: rgba(0,150,225,.75);
+  }
+  *::selection {
+    background: rgba(0,150,225,.75);
+  }
 }
 
 a.cta {

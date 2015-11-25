@@ -12,6 +12,10 @@ body {
   margin: 0;
   position: absolute;
   width: 100%; }
+  body *::-moz-selection {
+    background: rgba(0, 150, 225, 0.75); }
+  body *::selection {
+    background: rgba(0, 150, 225, 0.75); }
 
 a.cta {
   border-radius: .25em;
