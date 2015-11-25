@@ -106,14 +106,13 @@ code {
   color: #fff;
   display: block;
   font: 18px 'Courier new', Courier, fixed;
-  height: 1em;
   margin: 15px auto;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 10px;
-  text-align: left;
+  transition: background .25s;
   white-space: nowrap;
-  width: 300px;
-  transition: background .25s; }
+  width: 300px; }
   code:hover {
     background: rgba(0, 0, 0, 0.2); }
 
